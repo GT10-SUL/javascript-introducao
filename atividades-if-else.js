@@ -73,12 +73,12 @@
 
 //Questão 7
 
-let ano = 2023;
+// let ano = 2023;
 
-if (ano % 400 == 0) {
-    console.log(`${ano} é bisexto`);
-} else if (ano % 4 == 0 && ano % 100 != 0) {
-    console.log(`${ano} é bisexto`);
-} else {
-    console.log(`${ano} não é bisexto`);
-}
+// if (ano % 400 == 0) {
+//     console.log(`${ano} é bisexto`);
+// } else if (ano % 4 == 0 && ano % 100 != 0) {
+//     console.log(`${ano} é bisexto`);
+// } else {
+//     console.log(`${ano} não é bisexto`);
+// }
