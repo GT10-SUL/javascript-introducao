@@ -1,18 +1,8 @@
-// let mes = prompt("Digite o mês do seu nascimento(ex: jan):");
-// let dia = prompt("Digite o dia do seu nascimento(ex: 1-31):");
-// let nomeDaBanda = "";
-
-// switch(mes){
-//     case "jan":
-//         nomeDaBanda = "Capirotos";
-//     break;
-// }
-
-// alert(`O nome da sua banda é ${nomeDaBanda}`)
 
 function descobrirNome() {
     let diaEscolhido = document.querySelector("#dia").value;
     let mesEscolhido = document.querySelector("#mes").value;
+
 
     let escolhaMes = "";
     let escolhaDia = "";
@@ -158,5 +148,92 @@ function descobrirNome() {
     }
 
     alert(`O nome da sua banda é ${escolhaMes} ${escolhaDia}`);
+
+}
+
+function testarIdade() {
+    let idadeMinima = document.querySelector("#idade").value;
+
+    if (idadeMinima >= 18) {
+        alert("Maior de idade");
+    } else {
+        alert("Menor de idade");
+    }
+}
+
+function testarNumero() {
+    let numero = document.querySelector("#numero").value;
+
+    if (numero > 0) {
+        alert("Positivo");
+    } else if (numero == 0) {
+        alert("Zero");
+    } else {
+        alert("Negativo");
+    }
+}
+
+function compararValores() {
+    let numeroA = document.querySelector("#numero1").value;
+    let numeroB = document.querySelector("#numero2").value;
+
+    if (numeroA > numeroB) {
+        alert(`${numeroA} é maior que ${numeroB}`);
+    } else if (numeroB > numeroA) {
+        alert(`${numeroB} é maior que ${numeroA}`);
+    } else {
+        alert("Os números são iguais");
+    }
+
+}
+
+function parOuImpar() {
+    let numero = document.querySelector("#par").value;
+
+    if ((numero % 2) == 0) {
+        alert(`${numero} é par!`);
+    } else {
+        alert(`${numero} é impar!`);
+    }
+
+}
+
+function media() {
+    let notaA = Number(document.querySelector("#media1").value);
+    let notaB = Number(document.querySelector("#media2").value);
+    let notaC = Number(document.querySelector("#media3").value);
+    let media = ((notaA + notaB + notaC) / 3).toFixed(1);
+    let situacao = "";
+
+    if (media >= 7) {
+        situacao = "Aprovado";
+    } else if (media > 5 && media < 7) {
+        situacao = "Recuperação";
+    } else {
+        situacao = "Reprovado";
+    }
+    alert(`${situacao}, média: ${media}`);
+
+}
+
+function aplicarDesconto() {
+    let valor = Number(document.querySelector("#valor").value);
+    let desconto = 0.1;
+    if (valor > 100) {
+        alert(`Total a pagar: R$ ${(valor - (valor * desconto)).toFixed(2)}`);
+    } else {
+        alert(`Total a pagar: R$ ${valor.toFixed(2)}`);
+    }
+}
+function verificarAno() {
+    let anoValor = Number(document.querySelector("#ano").value);
+
+if (anoValor % 400 == 0) {
+    console.log(`${anoValor} é bisexto`);
+} else if (anoValor % 4 == 0 && anoValor % 100 != 0) {
+    console.log(`${anoValor} é bisexto`);
+} else {
+    console.log(`${anoValor} não é bisexto`);
+}
 
 }

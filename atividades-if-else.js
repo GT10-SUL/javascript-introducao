@@ -1,24 +1,24 @@
 
 //Questão 1
-// let idadeMinima = 17;
+let idadeMinima = 17;
 
-// if(idadeMinima >= 18){
-//     console.log("Maior de idade");
-// }else{
-//     console.log("Menor de idade");
-// }
+if(idadeMinima >= 18){
+    console.log("Maior de idade");
+}else{
+    console.log("Menor de idade");
+}
 
 //Questão 2
 
-// let numero = 10;
+let numero = 10;
 
-// if(numero > 0){
-//     console.log("Positivo");
-// } else if(numero == 0){
-//     console.log("Zero");
-// } else {
-//     console.log("Negativo");
-// }
+if(numero > 0){
+    console.log("Positivo");
+} else if(numero == 0){
+    console.log("Zero");
+} else {
+    console.log("Negativo");
+}
 
 //Questão 3
 
@@ -73,12 +73,12 @@
 
 //Questão 7
 
-// let ano = 2023;
+let ano = 2023;
 
-// if (ano % 400 == 0) {
-//     console.log(`${ano} é bisexto`);
-// } else if (ano % 4 == 0 && ano % 100 != 0) {
-//     console.log(`${ano} é bisexto`);
-// } else {
-//     console.log(`${ano} não é bisexto`);
-// }
+if (ano % 400 == 0) {
+    console.log(`${ano} é bisexto`);
+} else if (ano % 4 == 0 && ano % 100 != 0) {
+    console.log(`${ano} é bisexto`);
+} else {
+    console.log(`${ano} não é bisexto`);
+}
